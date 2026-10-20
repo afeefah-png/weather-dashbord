@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Weather Dashboard</h1>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">Search</button>
+        </div>
+
+
+        <!-- Current Weather -->
+        <div class="weather-card">
+
+            <h2 id="cityName">Calicut</h2>
+
+            <p id="description">Sunny</p>
+
+            <div class="temperature">
+                <span id="temperature">30</span>°C
+            </div>
+
+            <p>Feels like: <span id="feelsLike">32</span>°C</p>
+
+        </div>
+
+
+        <!-- Weather Details -->
+        <div class="details">
+
+            <div class="detail-card">
+                <h3>💧 Humidity</h3>
+                <p id="humidity">70%</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>💨 Wind</h3>
+                <p id="wind">12 km/h</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>🌡️ Pressure</h3>
+                <p id="pressure">1012 hPa</p>
+            </div>
+
+        </div>
+
+
+
+        <h2>5 Day Forecast</h2>
+
+        <div id="forecast" class="forecast"></div>
+
+
+        <div class="stats">
+
+            <h2>Dashboard Stats</h2>
+
+            <p id="averageTemp"></p>
+
+            <p id="highestTemp"></p>
+
+            <p id="lowestTemp"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
